@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1 style="color: grey;">Pratik - Form Elemanları Kullanımı</h1>
+    <form>
+        <!-- Form kutucukları -->
+        <label for="name">Ad:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="name">Soyad:</label><br>
+        <input type="text" id="sname" name="sname"><br><br>
+        
+        <label for="email">E-posta:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="password">Parola:</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <!-- Cinsiyet radio seçenekleri -->
+        <p>Cinsiyet</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Erkek</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Kadın</label><br><br>
+
+        <!-- Favori meyveler açılır menü -->
+        <label for="meyve">Favori meyveniz:</label><br>
+        <select id="meyve" name="meyve">
+            <option value="Elma">Elma</option>
+            <option value="Armut">Armut</option>
+            <option value="Şeftali">Şeftali</option>
+            <option value="Muz">Muz</option>
+            <option value="Kiraz">Kiraz</option>
+            <option value="Karpuz">Karpuz</option>
+            <option value="Kivi">Kivi</option>
+            <option value="Portakal">Portakal</option>
+            <option value="Diğer">Diğer</option>
+        </select><br><br>
+        
+        <!-- Mesaj kutusu -->
+        <label for="message">Mesajınız:</label><br>
+        <textarea id="message" name="message" rows="6" cols="22"></textarea><br><br>
+
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+</html>
